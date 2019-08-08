@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+<h1 align="center"v>Registration Form</h1>
+<hr>
+
+<form name="f1" method = "POST" action="/ServletApplicationDemo/Register">
+    <table align="center" border="1ps solid black" width="500px" height="400px" >
+        <tbody>
+        <tr>
+            <td>User name:</td>
+            <td><input type="text" name="userName"/></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"/></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="gender" value="Male" /> Male &nbsp;
+                <input type="radio" name="gender" value="Famale" /> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Hobbies :</td>
+            <td><input type="checkbox" name="hobbies" value="Movie" /> Movie &nbsp;
+                <input type="checkbox" name="hobbies" value="Reading" /> Reading &nbsp;
+                <input type="checkbox" name="hobbies" value="Music" /> Music &nbsp;
+                <input type="checkbox" name="hobbies" value="Sport" /> Sport &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td>Country: </td>
+            <td><select name="country">
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Japan">Japan</option>
+                <option value="Germany">Germany</option>
+            </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td >Languages Known: </td>
+            <td>
+                <select name="langs" multiple="multiple">
+                    <option>English</option>
+                    <option>German</option>
+                    <option>Mandarin</option>
+                    <option>French</option>
+                    <option>Hindi</option>
+                    <option>Italian</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="reset" value="Clear" name="btnClear" /></td>
+            <td><input type="submit" value="Register" name="btnRegister"/></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
